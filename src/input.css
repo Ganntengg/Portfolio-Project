@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .card {
+    @apply w-44 aspect-portrait border-[1px] rounded-lg shadow p-2 overflow-hidden transition-all duration-500;
+  }
+  .card-title {
+    @apply mt-2 text-xl transition-all duration-500;
+  }
+  .card-img {
+    @apply aspect-square rounded-lg transition-all duration-500;
+  }
+  .card-desc {
+    @apply text-sm text-gray-400 transition-all duration-500;
+  }
+  button.active > span:nth-child(1) {
+    @apply rotate-45;
+  }
+  button.active > span:nth-child(2) {
+    @apply scale-0;
+  }
+  button.active > span:nth-child(3) {
+    @apply -rotate-45;
+  }
+}
