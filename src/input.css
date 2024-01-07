@@ -5,16 +5,13 @@
 
 @layer components {
   .card {
-    @apply w-44 aspect-portrait border-[1px] rounded-lg shadow p-2 overflow-hidden transition-all duration-500;
-  }
-  .card-title {
-    @apply mt-2 text-xl transition-all duration-500;
+    @apply w-40 h-40 rounded-lg overflow-hidden relative shadow-xl border-2 cursor-pointer;
   }
   .card-img {
-    @apply aspect-square rounded-lg transition-all duration-500;
+    @apply transition-all duration-500;
   }
-  .card-desc {
-    @apply text-sm text-gray-400 transition-all duration-500;
+  .card-title {
+    @apply scale-0 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-2xl transition duration-500 text-white;
   }
   button.active > span:nth-child(1) {
     @apply rotate-45;
