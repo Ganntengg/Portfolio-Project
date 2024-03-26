@@ -711,10 +711,6 @@ button.active > span:nth-child(3){
   cursor: pointer;
 }
 
-.resize{
-  resize: both;
-}
-
 .flex-row{
   flex-direction: row;
 }
@@ -953,6 +949,11 @@ button.active > span:nth-child(3){
   color: rgb(15 23 42 / var(--tw-text-opacity));
 }
 
+.text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .shadow{
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
@@ -977,9 +978,33 @@ button.active > span:nth-child(3){
   transition-duration: 500ms;
 }
 
+.duration-300{
+  transition-duration: 300ms;
+}
+
 .hover\:bg-green-600:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(22 163 74 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-black:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-gray-600:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(75 85 99 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-gray-900:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-slate-900:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
 }
 
 .hover\:text-black:hover{
@@ -990,6 +1015,11 @@ button.active > span:nth-child(3){
 .hover\:text-white:hover{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.hover\:brightness-50:hover{
+  --tw-brightness: brightness(.5);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .group:hover .group-hover\:scale-100{

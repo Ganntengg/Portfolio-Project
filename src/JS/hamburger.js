@@ -1,8 +1,6 @@
 const hamburger = document.getElementById("hamburger");
 const navUl = document.getElementById("ulHamb");
 let width = 0;
-console.log(navUl);
-console.log(window.innerWidth);
 window.addEventListener("resize", detectResize);
 
 hamburger.onclick = () => {
@@ -23,5 +21,4 @@ function detectResize(e) {
     hamburger.classList.remove("active");
     navUl.classList.replace("absolute", "hidden");
   }
-  console.log(width);
 }

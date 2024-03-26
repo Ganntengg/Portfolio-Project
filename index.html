@@ -62,9 +62,9 @@
         </li>
         <li>
           <a
-            href="#projects"
+            href="#languages"
             class="hover:text-black dark:hover:text-white my-3"
-            >Projects</a
+            >Languages</a
           >
         </li>
         <li>
@@ -104,7 +104,7 @@
       </div>
 
       <!-- Image if Small -->
-      <div class="rounded-xl scale-[1.5] sm:hidden overflow-hidden mt-5">
+      <div class="rounded-xl scale-[1.5] sm:hidden overflow-hidden mt-10">
         <img src="./img/working.png" alt="" />
       </div>
     </section>
@@ -133,25 +133,25 @@
           officia dolor quidem amet provident ullam dolorem eius magni
         </p>
       </div>
-      <!-- Button to Projects -->
+      <!-- Button to Languages that i use -->
       <div>
-        <a href="#projects"
+        <a href="#languages"
           ><button
             type="button"
             class="py-2 px-3 bg-transparent border-2 rounded-lg hover:bg-green-600 hover:text-white transition-all duration-500 mt-4"
           >
-            View Project
+            View Languages
           </button></a
         >
       </div>
     </section>
 
-    <!-- Projects -->
+    <!-- Languages -->
     <section
-      id="projects"
+      id="languages"
       class="w-full p-5 flex flex-col items-center border-b-2"
     >
-      <!-- "Projects" Text -->
+      <!-- "Languages" Text -->
       <div>
         <h1 class="text-3xl font-bold">Languages</h1>
         <hr class="w-5/6 border-4 rounded-full border-green-600" />
@@ -203,13 +203,13 @@
           </div>
         </a>
         <a href="https://nodejs.org/en">
-          <div class="card group">
+          <div class="card group hover:bg-black transition-all duration-500">
             <img
               src="./img/node.png"
               class="card-img group-hover:brightness-[.3] group-hover:scale-110 object-cover"
               alt=""
             />
-            <h1 class="card-title group-hover:scale-100">NodeJS</h1>
+            <h1 class="card-title text-white group-hover:scale-100">NodeJS</h1>
           </div>
         </a>
       </div>
@@ -262,7 +262,7 @@
     </section>
 
     <!-- Footer -->
-    <section class="w-full p-5 bg-emerald-200">
+    <footer class="w-full p-5 bg-emerald-200">
       <!-- Wrapper -->
       <div class="flex flex-col items-center">
         <!-- Social Media Wrapper -->
@@ -283,13 +283,19 @@
         <nav class="flex flex-row gap-5 mt-5">
           <ul class="flex gap-x-7 text-gray-500">
             <li><a href="#home" class="hover:text-black">Home</a></li>
-            <li><a href="#about-me" class="hover:text-black">About Me</a></li>
-            <li><a href="#projects" class="hover:text-black">Projects</a></li>
+            <li>
+              <a href="#about-me" class="hover:text-black">About Me</a>
+            </li>
+            <li>
+              <a href="#projects" class="hover:text-black text-center"
+                >Projects</a
+              >
+            </li>
             <li><a href="#contact" class="hover:text-black">Contact Me</a></li>
           </ul>
         </nav>
       </div>
-    </section>
+    </footer>
     <script src="./src/JS/darkMode.js"></script>
     <script src="./src/JS/hamburger.js"></script>
   </body>
